@@ -1,7 +1,10 @@
-package org.example.incrementor;
+package org.example.incrementer;
 
 import junit.framework.TestCase;
 import lombok.AllArgsConstructor;
+import org.example.incrementer.CASIncrementer;
+import org.example.incrementer.IIncrementer;
+import org.example.incrementer.SynchronizedIncrementer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

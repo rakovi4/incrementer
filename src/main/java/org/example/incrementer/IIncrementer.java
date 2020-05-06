@@ -1,10 +1,5 @@
-package org.example.incrementor;
+package org.example.incrementer;
 
-/**
- * Incrementer interface. Increments number, sets number to zero
- * after it reaches max value. Initially number equals to zero, max
- * value equals to Integer.MAX_VALUE
- */
 public interface IIncrementer {
 
     /**

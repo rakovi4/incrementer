@@ -1,10 +1,15 @@
-package org.example.incrementor;
+package org.example.incrementer;
+
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Alternative;
 
 /**
  * Blocking synchronized (thread-safe) implementation of IIncrementor.
  * Increments number, sets number to zero after it reaches max value. Initially
  * number equals to zero, max value equals to Integer.MAX_VALUE
  */
+@ApplicationScoped
+@Alternative
 public class SynchronizedIncrementer implements IIncrementer {
     private volatile int incrementValue = 0;
     private int maximumValue = Integer.MAX_VALUE;

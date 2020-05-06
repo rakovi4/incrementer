@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'war'
 }
 
 group 'org.example'
@@ -10,6 +11,8 @@ repositories {
 }
 
 dependencies {
+    providedCompile 'jakarta.platform:jakarta.jakartaee-api:8.0.0'
+
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
 
@@ -19,4 +22,6 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
-
+war {
+    archiveName 'incrementer.war'
+}

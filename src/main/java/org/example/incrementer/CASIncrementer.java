@@ -1,8 +1,9 @@
-package org.example.incrementor;
+package org.example.incrementer;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Default;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
@@ -10,6 +11,8 @@ import java.util.concurrent.atomic.AtomicReference;
  * Increments number, sets number to zero after it reaches max value. Initially
  * number equals to zero, max value equals to Integer.MAX_VALUE
  */
+@ApplicationScoped
+@Default
 public class CASIncrementer implements IIncrementer {
 
     AtomicReference<IncAndMaxPair> incAndMaxPair =
