@@ -1,7 +1,7 @@
 # incrementer
 
 <h3>Prerequisites</h3>
-Docker.
+<a href="https://docs.docker.com/engine/install/">Docker</a>
 
 <h3>Deployment</h3>
 
@@ -21,12 +21,12 @@ make clean
 
 To get number:
 
-`curl http://localhost:8080/incrementer/api/incrementer/number` 
+`curl -i http://localhost:8080/incrementer/api/incrementer/number` 
 
 To increment number:
 
-`curl http://localhost:8080/incrementer/api/incrementer/increment`
+`curl -i http://localhost:8080/incrementer/api/incrementer/increment`
 
 To set max val:
 
-`curl http://localhost:8080/incrementer/api/incrementer/setMax?maxVal=3`
+`curl -i http://localhost:8080/incrementer/api/incrementer/setMax?maxVal=3`

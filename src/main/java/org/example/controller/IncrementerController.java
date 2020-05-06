@@ -23,7 +23,7 @@ public class IncrementerController {
     @Path("number")
     public Response getNumber() {
 
-        return Response.ok().entity(Integer.toString(incrementerService.getNumber())).build();
+        return Response.ok().entity(Integer.toString(incrementerService.getNumber()) + "\n").build();
     }
 
     @GET
