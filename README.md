@@ -1,7 +1,7 @@
 # incrementer
 
 <h3>Prerequisites</h3>
-Gradle, Docker.
+Docker.
 
 <h3>Deployment</h3>
 
